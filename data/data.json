@@ -1,0 +1,44 @@
+{
+    "albums":[
+        {
+            "name":"Travis Scott",
+            "shortname":"Days",
+            "albumname":"Days Before Rodeo",
+            "summary":"“Days Before Rodeo”, Scott’s second mixtape, is what kickstarted his rap career and began to make a name for the Houston native. Inspired by Kid Cudi, many of Scott’s tracks are influenced by his style, such as his signature low pitched humming. Released Aug. 18, 2014, Scott’s mixtape contains 12 songs spanning just over 50 minutes, featuring artists Rich Homie Quan, Young Thug, among others.",
+            "artwork":"",
+            "tracklist":"",
+            "appleMusic":"",
+            "spotify":""
+        },
+        {
+            "name":"Travis Scott",
+            "shortname":"Rodeo",
+            "albumname":"Rodeo",
+            "summary":"",
+            "artwork":"",
+            "tracklist":"",
+            "appleMusic":"",
+            "spotify":""
+        },
+        {
+            "name":"Travis Scott",
+            "shortname":"Birds",
+            "albumname":"Birds in the Trap Sing McKnight",
+            "summary":"",
+            "artwork":"",
+            "tracklist":"",
+            "appleMusic":"",
+            "spotify":""
+        },
+        {
+            "name":"Travis Scott",
+            "shortname":"Astroworld",
+            "albumname":"Astroworld",
+            "summary":"",
+            "artwork":"",
+            "tracklist":"",
+            "appleMusic":"",
+            "spotify":""
+        }
+    ]
+}
