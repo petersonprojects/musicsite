@@ -5,27 +5,27 @@
             "shortname":"Days",
             "albumname":"Days Before Rodeo",
             "summary":"“Days Before Rodeo”, Scott’s second mixtape, is what kickstarted his rap career and began to make a name for the Houston native. Inspired by Kid Cudi, many of Scott’s tracks are influenced by his style, such as his signature low pitched humming. Released Aug. 18, 2014, Scott’s mixtape contains 12 songs spanning just over 50 minutes, featuring artists Rich Homie Quan, Young Thug, among others.",
-            "artwork":["days.jpeg"],
+            "artwork":["days.jpg"],
             "tracklist":"1. The Prayer<br>2. Mamacita<br>3. Quintana, Part 2<br>4. Drugs You Should Try It<br>5. Don't Play<br>6. Skyfall<br>7. Zombies<br>8. Sloppy Toppy<br>9. Basement Freestyle<br>10. Backyard<br>11. Grey<br>12. BACC<br>",
-            "appleMusic":"",
-            "spotify":""
+            "appleMusic":"https://music.apple.com/us/artist/travis-scott/549236696",
+            "spotify":"https://open.spotify.com/playlist/4UgQ2PRfegIhkCHTY7cgJ1"
         },
         {
             "name":"Travis Scott",
             "shortname":"Rodeo",
             "albumname":"Rodeo",
-            "summary":"",
-            "artwork":"",
-            "tracklist":"",
-            "appleMusic":"",
-            "spotify":""
+            "summary":"Rodeo is the culmination of Travis Scott’s amassed networking efforts. The credits are a Who’s Who of the big names in rap and its neighboring genres: Narrated by T.I., it tells a nebulous tale of Scott’s meteoric rise and the perils of fame.",
+            "artwork":["rodeo.jpg"],
+            "tracklist":"1. Pornography<br>2. Oh My Dis Side<br>3. 3500<br>4. Wasted<br>5. 90210<br>6. Pray 4 Love<br>7. Nightcrawler<br>8. Piss on Your Grave<br>9. Antidote<br>10. Impossible<br>11. Maria I'm Drunk<br>12. Flying High<br>13. I Can Tell<br>14. Apple Pie<br>15(Deluxe). Ok Alright<br>16(Deluxe). Never Catch Me<br>",
+            "appleMusic":"https://music.apple.com/us/album/rodeo-expanded-edition/1456176981",
+            "spotify":"https://open.spotify.com/playlist/2ceI9MRidO4gqNzBBQ648u"
         },
         {
             "name":"Travis Scott",
             "shortname":"Birds",
             "albumname":"Birds in the Trap Sing McKnight",
             "summary":"",
-            "artwork":"",
+            "artwork":[""],
             "tracklist":"",
             "appleMusic":"",
             "spotify":""
@@ -35,7 +35,7 @@
             "shortname":"Astroworld",
             "albumname":"Astroworld",
             "summary":"",
-            "artwork":"",
+            "artwork":[""],
             "tracklist":"",
             "appleMusic":"",
             "spotify":""
