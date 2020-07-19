@@ -4,3 +4,19 @@ body{
     margin: 0px;
     box-sizing: border-box;
 }
+
+li{
+    font-size: 20px;
+}
+
+.header{
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    background-color: black;
+}
+
+img{
+    height:35vh;
+    width:20vw;
+}

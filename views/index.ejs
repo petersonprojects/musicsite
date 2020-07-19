@@ -8,9 +8,43 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
+
+
+
+        <div class="container-fluid">
+            <div class="row header mb-5">
+                <div class="col d-flex justify-content-center">
+                    <%= artist %> Fan Club
+                </div>
+            </div>
+
+            <div class="row">  
+                <% var count = 1 %> 
+                <% albums.forEach(albumObj => { %>
+                    <div class="col-3 d-flex justify-content-center">
+                        <a href="albums/<%= count %>" > <img src="/images/<%= albumObj.artwork[0] %>"  alt=""></a>
+                        <% count++ %> 
+                    </div>
+                <% }) %>
+
+                <% albums.forEach(albumObj => { %>
+                    <div class="col-3 d-flex justify-content-center">
+                        <a href="<%= albumObj.appleMusic %> " target="_blank">
+                            <h4>Apple Music</h4>
+                        </a>
+                        <a href="<%= albumObj.spotify %> " target="_blank">
+                            <h4 class="ml-5">Spotify</h4>
+                        </a>
+                    </div>
+                <% }) %>
+
+            </div>
+
+        </div>
+
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
