@@ -2,7 +2,7 @@
     "albums":[
         {
             "name":"Travis Scott",
-            "shortname":"Days",
+            "shortname":"days",
             "albumname":"Days Before Rodeo",
             "summary":"“Days Before Rodeo”, Scott’s second mixtape, is what kickstarted his rap career and began to make a name for the Houston native. Inspired by Kid Cudi, many of Scott’s tracks are influenced by his style, such as his signature low pitched humming. Released Aug. 18, 2014, Scott’s mixtape contains 12 songs spanning just over 50 minutes, featuring artists Rich Homie Quan, Young Thug, among others.",
             "artwork":["days.jpg"],
@@ -12,7 +12,7 @@
         },
         {
             "name":"Travis Scott",
-            "shortname":"Rodeo",
+            "shortname":"rodeo",
             "albumname":"Rodeo",
             "summary":"Rodeo is the culmination of Travis Scott’s amassed networking efforts. The credits are a Who’s Who of the big names in rap and its neighboring genres: Narrated by T.I., it tells a nebulous tale of Scott’s meteoric rise and the perils of fame.",
             "artwork":["rodeo.jpg"],
@@ -22,7 +22,7 @@
         },
         {
             "name":"Travis Scott",
-            "shortname":"Birds",
+            "shortname":"birds",
             "albumname":"Birds in the Trap Sing McKnight",
             "summary":"A tragic accident dramatically changes Travis Scott's life, taking him into a surreal journey through time and into life after death.",
             "artwork":["birds.jpg"],
@@ -32,7 +32,7 @@
         },
         {
             "name":"Travis Scott",
-            "shortname":"Astroworld",
+            "shortname":"astroworld",
             "albumname":"Astroworld",
             "summary":"Scott aimed for this album to sound like 'taking an amusement park away from kids'. He also described the album as a continuation of his debut album Rodeo (2015). Astroworld is a hip hop album, incorporating elements of trap and psychedelic music.",
             "artwork":["astro.jpg"],
