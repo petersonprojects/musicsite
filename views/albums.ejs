@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title><%= short %> </title>
+    <title><%= albums.shortname %> </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +11,30 @@
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-        <%= short %> 
+    <div class="container-fluid">
+
+
+          <% albums.forEach(albumObj => { %>
+
+            <div class="row">
+
+                    <div class="col">
+                        <img src="/images/<%= albumObj.artwork[0] %>"  alt="">
+                    </div>
+
+                      <!-- <a href="<%= albumObj.appleMusic %> " target="_blank" style="display:block">
+                          <p>Apple Music</p>
+                      </a>
+                      <a href="<%= albumObj.spotify %> " target="_blank">
+                          <p class="ml-2">Spotify</p>
+                      </a> -->
+
+            </div>
+
+          <% }) %>
+
+
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

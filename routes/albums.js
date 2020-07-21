@@ -5,28 +5,22 @@ const router = express.Router();
 
 let dataFile = require('../data/data.json')
 
-const albums = dataFile.albums;
 
-router.get(`/albums/${albums.shortname}`,(req,res)=>{
+router.get('/albums',(req,res)=>{
      //code and then res.render
 
-     let artist = albums[0].name;
- 
+    const albums = dataFile.albums; 
+    const artist = albums[0].name;
+
      let albumCovers = []; //populate with all of the artwork
      let albumNames = [];
      let hrefsAM = [];
-     
  
      albums.forEach(albumObj=>{
          albumCovers = albumCovers.concat(albumObj.artwork[0])
-     })
- 
-     albums.forEach(albumObj=>{
-         albumNames = albumNames.concat(albumObj.albumname)
-     })
- 
-     albums.forEach(albumObj=>{
          hrefsAM = hrefsAM.concat(albumObj.appleMusic)
+         albumNames = albumNames.concat(albumObj.albumname)
+
      })
  
      res.render('albums',{
@@ -37,3 +31,33 @@ router.get(`/albums/${albums.shortname}`,(req,res)=>{
          hrefsAM: hrefsAM
      })
 })
+
+router.get(`albums/:albumid`,(req,res)=>{
+
+    const albums = dataFile.albums; 
+    const artist = albums[0].name;
+
+    let covers = [];
+    let album = [];
+    
+    albums.forEach(albumObj=>{
+
+        if(albumObj.shortname == req.params.albumid)
+        {
+            covers.push(albumObj.artwork[0]);
+            album.push(albumObj);
+
+        }
+
+    })
+
+    res.render('albums',{
+
+        artwork: covers,
+        albums: album
+        
+    })
+
+})
+
+module.exports = router;
