@@ -25,68 +25,92 @@
   </head>
   <body>
 
+
     <div class="container-fluid">
+
+      <%- include('partials/content/header.ejs')  %> 
 
         <% albums.forEach(albumObj => { %>
 
+          <div class="row">
+
+            <div class="col-2"></div>
+
+            <div class="col d-flex justify-content-start" style="font-size:70px;">
+              <%= albumObj.albumname %>
+            </div>
+
+          </div>
+
           <div class="row mt-3 mb-3">
 
-                  <div class="offset-1 col-2">
+            <div class="col-lg-2 d-flex justify-content-center" style="font-size:12px;">
 
-                      <a href="/albums/<%=albumObj.shortname%>"><img src="/images/<%= albumObj.artwork %>"  alt=""></a>
+              <% if (albums.length == 1) { %>
 
-                      <% if (albums.length == 1) { %>
+                <% for( let index = 0; index < tracks.length; index++ ) { %>
 
-                        <a href="<%= albumObj.appleMusic %> " target="_blank" style="display:block">
-                          <span>Apple Music</span>
-                        </a>
-                        
-                        <a href="<%= albumObj.spotify %> " target="_blank">
-                            <span>Spotify</span>
-                        </a>
-                        
-                      <% } %>
+                  <%= tracks[index] %>
+                  <br>
 
-                  </div> <!-- album artwork and purchase links -->
+                <% } %>
 
-                  <div id="tracklist" class="offset-1 col-lg-7 d-flex align-items-center">
+              <% } %>
 
-                    <% if (albums.length == 1) { %>
+            </div>
 
-                      <% for( let index = 0; index < tracks.length; index++ ) { %>
+            <div class="col-lg-2 d-flex justify-content-center">
 
-                        <%= tracks[index] %>
-                        <br>
+              <!-- album cover -->
 
-                      <% } %>
+                <a href="/albums/<%=albumObj.shortname%>"><img src="/images/<%= albumObj.artwork %>"  alt=""></a>
 
-                      <%= albumObj.summary %> 
-
-                    <% } %>
-
-                  </div> <!-- end of tracklist -->
+              </div>
 
 
-          </div> <!-- end of first row -->
+            <div class="col-lg-4  d-flex justify-content-center pt-5" style="font-size:16px;">
+              <%= albumObj.summary %> 
+            </div>
 
-                  <div class="row">
-                    <div class="col d-flex justify-content-center" style="font-size:80px">
+            <div class="col-lg-4">
 
-                      <%= albumObj.albumname %> 
+              <% if (albums.length == 1) { %>
 
-                    </div>
-                  </div>
+                <ul>
+                  <li>
+
+                    <a href="<%= albumObj.appleMusic %> " target="_blank" style="font-size:20px">
+                      Apple Music
+                    </a>
+                  </li>
+
+                  <li class="mt-5">
+                    <a href="<%= albumObj.spotify %> " target="_blank" style="font-size:20px">
+                      Spotify
+                    </a>
+                  </li>
+                </ul>
+
+                <br>
+
+                
+              <% } %>
+
+            </div>
+
+          </div> <!-- end of tracks, cover, links row -->
+
 
 
         <% }) %>
 
-  </div>
+  </div> <!-- end container fluid -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
     <script src="/js/albums.js"></script>
 
   </body>

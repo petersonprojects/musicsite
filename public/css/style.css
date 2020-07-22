@@ -207,3 +207,17 @@ img{
     width: 200px;
     height: 200px;
 }
+
+ul{
+  list-style: none;
+}
+
+a:hover{
+  text-decoration: none;
+  cursor: crosshair;
+}
+
+#gif{
+  height:300px;
+  width:500px;
+}
