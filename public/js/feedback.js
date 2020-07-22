@@ -63,7 +63,7 @@ $(()=>{
     //     console.log('im here');
     //     $('.feedback-delete').remove();
 
-    //     $.del('/api', {
+    //     $.delete('/api', {
     //         name: $('#feedback-form-name').val(),
     //         title: $('#feedback-form-title').val(),
     //         message: $('#feedback-form-message').val()

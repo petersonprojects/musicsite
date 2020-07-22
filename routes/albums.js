@@ -17,7 +17,8 @@ router.get('/albums',(req,res)=>{
      let hrefsAM = [];
  
      albums.forEach(albumObj=>{
-         albumCovers = albumCovers.concat(albumObj.artwork[0])
+
+         albumCovers = albumCovers.concat(albumObj.artwork)
          hrefsAM = hrefsAM.concat(albumObj.appleMusic)
          albumNames = albumNames.concat(albumObj.albumname)
 
@@ -28,34 +29,34 @@ router.get('/albums',(req,res)=>{
          artwork: albumCovers,
          albumnames: albumNames,
          artist: artist,
-         hrefsAM: hrefsAM
+         hrefsAM: hrefsAM,
      })
 })
 
-router.get(`albums/:albumid`,(req,res)=>{
+router.get('/albums/:albumid',(req,res)=>{
 
-    const albums = dataFile.albums; 
-    const artist = albums[0].name;
+    let albumArray = dataFile.albums; 
+    let albumShort = req.params.albumid;
 
-    let covers = [];
-    let album = [];
+    let albums = [];
+    let trackArray = [];
+
     
-    albums.forEach(albumObj=>{
+    albumArray.forEach(albumObj=>{
 
-        if(albumObj.shortname == req.params.albumid)
+        if(albumObj.shortname == albumShort)
         {
-            covers.push(albumObj.artwork[0]);
-            album.push(albumObj);
-
+            let fullList = albumObj.tracklist;
+            trackArray = fullList.split('<br>');
+            // console.log(trackArray);
+            albums.push(albumObj);
         }
 
     })
 
     res.render('albums',{
-
-        artwork: covers,
-        albums: album
-        
+        albums: albums,
+        tracks: trackArray
     })
 
 })

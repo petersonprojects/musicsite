@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:100, 300);
 
 body {
   margin: 0;
@@ -9,7 +8,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #C1343F;
+  color: black;
 }
 
 p {
@@ -202,4 +201,9 @@ header .navbar-inverse .navbar-nav>li>a {
 
 .feedback-item:last-of-type {
   border-bottom: none;
+}
+
+img{
+    width: 200px;
+    height: 200px;
 }
