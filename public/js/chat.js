@@ -2,7 +2,7 @@
 // client side / front end JS file 
 // (can also be written in script tags in ejs)
 // otherwise u have to link at bottom of ejs file
-// requires the socket IO CDN 
+// requires the socket IO CDN
 
 const socket = io();
 var chatUsername = document.querySelector('#chat-username');
