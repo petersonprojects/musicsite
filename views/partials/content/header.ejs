@@ -4,7 +4,7 @@ albums
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Travis Scott</a>
+        <a class="navbar-brand" href="/">Travis Scott</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,14 +20,14 @@ albums
               <a class="nav-link" href="/chat" style="text-align: center;">Chat</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" style="text-align: center;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="/albums" style="text-align: center;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Albums
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-                <% if (albums.length == 1) { %>
+
                     <a class="dropdown-item" href="/albums">All Albums</a>
-                <% } %>
+
 
                 <% albums.forEach(albumObj => { %>
                     <a class="dropdown-item" href="/albums/<%= albumObj.shortname %>"><%= albumObj.albumname %> </a>
