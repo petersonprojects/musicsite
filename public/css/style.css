@@ -36,17 +36,28 @@ header {
 header .jumbotron {
   height: 40vh;
   margin-bottom: 0;
-  background: url(../images/misc/background.jpg) no-repeat 100% 5%;
+  background: url(../images/jumbotron.jpg) no-repeat 100% 5%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position-y: -220px;
+}
+.jumbotron2 {
+  height: 40vh;
+  margin-bottom: 0;
+  background: url(../images/jumbotron2.jpeg) no-repeat 100% 5%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: 120px;
 }
 
 /**  Navbar **/
 
 header .navbar {
-  background: blue;
   margin-bottom: 0;
   border-radius: 0;
   font-family: "Roboto", sans-serif;
@@ -207,6 +218,7 @@ img{
     width: 200px;
     height: 200px;
     border: black solid 2px;
+    /* border-radius: 5%; */
 }
 
 ul{
