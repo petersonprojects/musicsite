@@ -16,7 +16,8 @@ router.get('/',(req,res)=>{
     // })
 
     res.render('index',{
-        artist:artist
+        artist:artist,
+        albums:albums
     })
 
 })

@@ -206,6 +206,7 @@ header .navbar-inverse .navbar-nav>li>a {
 img{
     width: 200px;
     height: 200px;
+    border: black solid 2px;
 }
 
 ul{
