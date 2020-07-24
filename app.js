@@ -1,7 +1,8 @@
 // configuration file
+require('dotenv').config();
 const express = require('express')
 const app = express();
-const PORT = 3005;
+const PORT = process.env.PORT;
 
 // establish chat socket server
 const socketServer = require('socket.io');
