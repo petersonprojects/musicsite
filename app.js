@@ -1,4 +1,10 @@
 // configuration file
+
+
+// git push heroku master
+// this will deploy updates on heroku app
+
+
 require('dotenv').config();
 const express = require('express')
 const app = express();
