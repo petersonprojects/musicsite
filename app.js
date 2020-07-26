@@ -1,16 +1,22 @@
-// configuration file
 
 
+// app.js is a configuration file
+
+// app deployment
 // git push heroku master
 // this will deploy updates on heroku app
 
 
 require('dotenv').config();
+
+
 const express = require('express')
 const app = express();
+
+// coming from the .env file that is require by heroku
 const PORT = process.env.PORT;
 
-// establish chat socket server
+// declare chat socket server
 const socketServer = require('socket.io');
 
 app.set('view engine', 'ejs')
