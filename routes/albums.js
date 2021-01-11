@@ -9,7 +9,8 @@ let dataFile = require('../data/data.json')
 router.get('/albums',(req,res)=>{
      //code and then res.render
 
-    const albums = dataFile.albums; 
+    // console.log(dataFile)
+    const albums = dataFile.albums;
     const artist = albums[0].name;
 
      let albumCovers = []; //populate with all of the artwork

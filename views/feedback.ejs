@@ -15,7 +15,8 @@
       <div class="row mt-5">
         <div class="col-sm-4">
           <h1 class="feedback-form-title">Send us feedback</h1>
-          <form class="feedback-form">
+
+          <form action="/feedback" method="POST" class="feedback-form">
             <div class="form-group">
               <label for="feedback-form-name">Name</label>
               <input type="text" class="form-control" id="feedback-form-name" placeholder="Enter your name">
@@ -30,12 +31,14 @@
             </div>
             <button id="comment" type="submit" class="btn btn-default pull-right">Submit</button>
           </form>
+
+          
         </div><!-- primary -->
         <aside class="col-sm-8">
           <div class="maincontent feedback">
               <h2 class="article-title">Recent Feedback</h2>
               <div class="feedback-messages">
-                 
+                
               </div>
           </div>
         </aside><!-- secondary -->

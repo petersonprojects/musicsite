@@ -16,10 +16,10 @@ $(()=>{
 
         var output = '';
 
-        $.each(data,function(key, item) {
+        $.each(data, function(key, item) {
             output += '     <div class="feedback-item item-list media-list">';
             output += '       <div class="feedback-item media">';
-            output += '       <div class="media-left"><button class="feedback-delete btn btn-xs btn-danger"><span id="' + key + '" class="glyphicon glyphicon-remove"></span></button></div>';
+            output += '       <div class="media-left"><button class="feedback-delete btn btn-xs btn-danger"><span class="removeItem" id="' + key + '">X</span></button></div>';
             output += '         <div class="feedback-info media-body">';
             output += '           <div class="feedback-head">';
             output += '             <div class="feedback-title">' + item.title + ' <small class="feedback-name label label-info">' + item.name + '</small></div>';
@@ -56,19 +56,41 @@ $(()=>{
         
     });
 
-    //for deleting feedback
+    // for deleting feedback
 
-    // $('span').click((e)=>{
+    $(document).click((e)=>{
 
-    //     console.log('im here');
-    //     $('.feedback-delete').remove();
+        console.log(e.target.className)
 
-    //     $.delete('/api', {
-    //         name: $('#feedback-form-name').val(),
-    //         title: $('#feedback-form-title').val(),
-    //         message: $('#feedback-form-message').val()
-    //     }, updateFeedback)
+        if(e.target.className == "removeItem")
+        {
+            console.log('im here');
+            // $('.feedback-delete').remove();
+    
+            // $.delete('/api', {
+            //     name: $('#feedback-form-name').val(),
+            //     title: $('#feedback-form-title').val(),
+            //     message: $('#feedback-form-message').val()
+            // }, updateFeedback)
 
-    // });
+            $.ajax({
+                url: '/api',
+                type: 'DELETE',
+                dataType: 'json',
+                data: {
+                    name: $('#feedback-form-name').val(),
+                    title: $('#feedback-form-title').val(),
+                    message: $('#feedback-form-message').val()
+                },
+                success: function(response) {
+                    console.log(response);
+                },
+                error: function(response) {
+                    console.log(response);
+                }
+            }, updateFeedback)
+        }
+
+    });
 
 });
